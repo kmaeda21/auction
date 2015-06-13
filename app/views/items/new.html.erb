@@ -3,9 +3,25 @@
 <%= form_for @item do |f| %>
 
 <p>
-item: <br>
+Item Description: <br>
 <%= f.text_field :name %>
 </p>
 
-
+<p>
+Price:<br>
+<%= f.number_field :price %>
+</p>
+<p>
+Seller ID:<br>
+<%= f.text_field :seller_id %>
+</p>
+<p>
+Email:<br>
+<%= f.text_field :email %>
+</p>
+<p>
+Image URL:<br>
+    <%= f.text_field :image_url %>
+</p>
+<%= f.submit "登録" %>
   <% end %>
