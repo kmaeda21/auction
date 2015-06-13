@@ -5,9 +5,8 @@ Rails.application.routes.draw do
 
   get '/items' => 'items#index'
 
-  patch '/items' => 'items#create'
-
-  #patch は sever  にデータを投げる。　#get は 受ける
+  post '/items' => 'items#create'
+  #post は sever  にデータを投げる。　#get は 受ける
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

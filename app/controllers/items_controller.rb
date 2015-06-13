@@ -21,7 +21,7 @@ class ItemsController < ApplicationController
     @item.save
 
     #️ show.html.erb に飛ばす
-    redirect_to "/item/#{@item.id}"
+    redirect_to "/items/#{@item.id}"
   end
 
   private
@@ -39,8 +39,5 @@ class ItemsController < ApplicationController
       :image_url
       )
     end
-
-
-
 
 end
