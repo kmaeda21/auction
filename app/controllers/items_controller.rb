@@ -7,4 +7,8 @@ class ItemsController < ApplicationController
     #Itemというモデルに対してfindメソッドでidを検索させている
     @item = Item.find(params[:id])
   end
+
+  def new
+    @item = Item.new
+  end
 end
